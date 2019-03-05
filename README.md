@@ -6,10 +6,10 @@
 
 <h1>Instalasi</h1>
 <h2>Kebutuhan Sistem : </h2>
--Unix, Linux atau Windows
--MariaDb
--Apache Web server 2
--PHP 7
+-Unix, Linux atau Windows <br>
+-MariaDb <br>
+-Apache Web server 2 <br>
+-PHP 7 <br>
 
 <h2>Proses Instalasi : </h2>
 1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost) 
