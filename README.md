@@ -15,9 +15,11 @@
 <ul> 1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost) 
   ```ssh dwikaayu@localhost -p 2222``` </ul> <br>
 <ul> 2. Mengupdate sistem dengan menginstal Apache2 HTTP di server Ubuntu</ul>
-  ```Install Apache
-     sudo apt update
-	   sudo apt install apache2```
+  ```
+	Install Apache
+     	sudo apt update
+	sudo apt install apache2
+```
   
 
 
