@@ -1,6 +1,9 @@
 ## ELGG
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1200px-Elgg.jpg"></img>
 
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+
 <h1>Sekilas Tentang</h1>
 <p> Elgg adalah sebuah social networking framework dan merupakan varian jenis CMS. CMS (Content Management System) sendiri merupakan aplikasi dari kumpulan bahasa pemrograman yang terhimpun menjadi satu dengan tujuan untuk mempermudah dalam mengelola dan memanajemen suatu website. CMS memiliki jenis yang beragam, misalnya saja, wordpress untuk blog, joomla untuk blog ataupun forum, lokomedia untuk toko online, dan Elgg sebagai situs jejaring sosial. <p>
 
@@ -32,27 +35,62 @@
 <i> Berikut ini perintah untuk memberhentikan, memulai dan mengaktifkan Apache2 di server boots </i>
 ```
   sudo systemctl stop apache2.service
-	sudo systemctl start apache2.service
-	sudo systemctl enable apache2.service
+  sudo systemctl start apache2.service
+  sudo systemctl enable apache2.service
 ```
 
-Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat IP address untuk mengetahui apakah halaman Apache2 bisa berjalan dengan baik atau tidak, jika berhasil akan muncul tampilan seperti ini :
+Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat IP address untuk mengetahui apakah halaman Apache2 bisa berjalan dengan baik atau tidak, jika berhasil akan muncul tampilan seperti ini :<br>
 <img src ="https://github.com/dwikaayunovianti/ELGG/blob/master/image/apache2_ubuntu_install.png"> </img>
 
 3. Langkah selanjutnya install MariaDB Database server
 ```
-  sudo apt-get install mariadb-server mariadb-client
+  $sudo apt-get install mariadb-server mariadb-client
 
 ```
 
-<i> Perintah untuk memberhentikan, memulai dan mengaktifkan MariaDB di server boot </i>
+<i> Perintah untuk memberhentikan, memulai dan mengaktifkan MariaDB di server boot. Jalankan ini di Ubuntu 17.10 dan 18.04 LTS
+</i>
 ```
-  sudo systemctl stop mariadb.service
-	sudo systemctl start mariadb.service
-	sudo systemctl enable mariadb.service
+  $sudo systemctl stop mariadb.service
+  $sudo systemctl start mariadb.service
+  $sudo systemctl enable mariadb.service
 ```
 
 4. Selanjutnya jalankan perintah dibawah ini untuk mengamankan server MariaDB dengan membuat root password dan disallowing remote root access.
 ```
-  sudo mysql_secure_installation
+  $sudo mysql_secure_installation
 ```
+
+Setelah itu akan muncul pertanyaan, maka jawab seperti ini <br>
+<ul> -Enter current password for root (enter for none): Tekan Enter </ul> <br>
+<ul> -Set root password? [Y/n]: Y </ul> <br>
+<ul> -New password: Masukkan Password</ul> <br>
+<ul> -Re-enter new password: Ulangi Password</ul> <br>
+<ul> -Remove anonymous users? [Y/n]: Y</ul> <br>
+<ul> -Disallow root login remotely? [Y/n]: Y</ul> <br>
+<ul> -Remove test database and access to it? [Y/n]:  Y</ul> <br>
+<ul> -Reload privilege tables now? [Y/n]:  Y</ul> <br>
+
+Kemudian restart MariaDB server
+
+Untuk menguji apakah MariaDB diinstal, ketik perintah di bawah ini untuk masuk ke server MariaDB
+```
+$ sudo mysql -u root -p	
+```
+
+Jika berhasil maka akan muncul <i> MariaDB welcome message </i> <br>
+
+5. Jalankan perintah di bawah ini menginstal PHP 7.2 dan modul terkait.
+```
+  $ sudo apt-get install software-properties-common  
+  $ sudo add-apt-repository ppa:ondrej/php 
+  $ sudo apt update sudo apt install php7.2 libapache2-mod-php7.2 php7.2-common php7.2-sqlite3 php7.2-curl php7.2-intl php7.2-mbstring       php7.2-xmlrpc php7.2-mysql php7.2-gd php7.2-xml php7.2-cli php7.2-zip
+  $ sudo nano /etc/php/7.2/apache2/php.ini
+```
+
+Kemudian ubah pengaturan seperti di bawah ini lalu simpan
+<ul> file_uploads = On</ul> <br>
+<ul> allow_url_fopen = On</ul><br>
+<ul> short_open_tag = On</ul><br>
+<ul> memory_limit = 256M</ul><br>
+<ul> upload_max_filesize = 100M </ul><br>
