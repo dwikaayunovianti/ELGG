@@ -4,5 +4,13 @@
 <p>  Elgg ini tergolong freeware dan untuk lisensinya sendiri termasuk open source dan kita bebas untuk mengembangkannya. Elgg memungkin kita untuk menjalankan jejaring sosialnya sendiri yang digunakan didalam jaringan internal/local dengan bantuan web server tentunya bisa berbasis linux server maupun windows. Tidak hanya itu Elgg juga bisa kita gunakan di shared hosting maupun di vps. Elgg beroperasi pada lingkungan LAMP (Linux, Apache, MySql dan Php) dan mudah untuk diinstal dan dikonfigurasi. </p>
 <p>  Meskipun tidak sepowerfull facebook namun elgg memiliki banyak fitur yang mumpuni untuk kita coba diantaranya : melakukan update status, tambah pertemanan, membuat group, upload file/foto, ganti foto profil, social  networking, weblog, bookmark, instant messaging, file repository, access control, tagging, customization, dan community building. </p>
 
+<h1>Instalasi</h1>
+<h2>Kebutuhan Sistem : </h2>
+<ul>Unix, Linux atau Windows</ul>
+<ul>MariaDb</ul>
+<ul>Apache Web server 2</ul>
+<ul>PHP 7<ul>
+
+
 
 
