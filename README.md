@@ -61,15 +61,15 @@ Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat
   $sudo mysql_secure_installation
 ```
 
-Setelah itu akan muncul pertanyaan, maka jawab seperti ini <br>
-<ul> -Enter current password for root (enter for none): Tekan Enter </ul> <br>
-<ul> -Set root password? [Y/n]: Y </ul> <br>
-<ul> -New password: Masukkan Password</ul> <br>
-<ul> -Re-enter new password: Ulangi Password</ul> <br>
-<ul> -Remove anonymous users? [Y/n]: Y</ul> <br>
-<ul> -Disallow root login remotely? [Y/n]: Y</ul> <br>
-<ul> -Remove test database and access to it? [Y/n]:  Y</ul> <br>
-<ul> -Reload privilege tables now? [Y/n]:  Y</ul> <br>
+Setelah itu akan muncul pertanyaan, maka jawab seperti ini 
+<ul> -Enter current password for root (enter for none): Tekan Enter </ul>
+<ul> -Set root password? [Y/n]: Y </ul> 
+<ul> -New password: Masukkan Password</ul>
+<ul> -Re-enter new password: Ulangi Password</ul>
+<ul> -Remove anonymous users? [Y/n]: Y</ul>
+<ul> -Disallow root login remotely? [Y/n]: Y</ul>
+<ul> -Remove test database and access to it? [Y/n]:  Y</ul> 
+<ul> -Reload privilege tables now? [Y/n]:  Y</ul> 
 
 Kemudian restart MariaDB server
 
