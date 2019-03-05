@@ -12,9 +12,9 @@
 <ul>-PHP 7<ul>
 
 <h2>Proses Instalasi :<h2>
-<il> 1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost) </il>
-  ```ssh dwikaayu@localhost -p 2222```
-<il> 2. Mengupdate sistem dengan menginstal Apache2 HTTP di server Ubuntu</il>
+<ul> 1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost) 
+  ```ssh dwikaayu@localhost -p 2222``` </ul> <br>
+<ul> 2. Mengupdate sistem dengan menginstal Apache2 HTTP di server Ubuntu</ul>
   ```Install Apache
      sudo apt update
 	   sudo apt install apache2```
