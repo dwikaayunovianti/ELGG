@@ -15,3 +15,8 @@
 -Apache Web server 2<br>
 -PHP 7 </p>
 
+<h3>Proses Instalasi :</h3>
+<p> 1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost)
+  ```ssh dwikaayu@localhost -p 2222 
+  ```
+  
