@@ -16,7 +16,43 @@
 -PHP 7 </p>
 
 <h3>Proses Instalasi :</h3>
-<p> 1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost)
-  ```ssh dwikaayu@localhost -p 2222 
+
+1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost) <br>
   ```
-  
+  ssh dwikaayu@localhost -p 2222 
+  ```
+
+2. Kemudian update sistem dengan menginstal Apache2 HTTP di server Ubuntu
+```
+  Install Apache
+  sudo apt update
+  sudo apt install apache2
+```
+
+<i> Berikut ini perintah untuk memberhentikan, memulai dan mengaktifkan Apache2 di server boots </i>
+```
+  sudo systemctl stop apache2.service
+	sudo systemctl start apache2.service
+	sudo systemctl enable apache2.service
+```
+
+Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat IP address untuk mengetahui apakah halaman Apache2 bisa berjalan dengan baik atau tidak, jika berhasil akan muncul tampilan seperti ini :
+<img src ="https://github.com/dwikaayunovianti/ELGG/blob/master/image/apache2_ubuntu_install.png"> </img>
+
+3. Langkah selanjutnya install MariaDB Database server
+```
+  sudo apt-get install mariadb-server mariadb-client
+
+```
+
+<i> Perintah untuk memberhentikan, memulai dan mengaktifkan MariaDB di server boot </i>
+```
+  sudo systemctl stop mariadb.service
+	sudo systemctl start mariadb.service
+	sudo systemctl enable mariadb.service
+```
+
+4. Selanjutnya jalankan perintah dibawah ini untuk mengamankan server MariaDB dengan membuat root password dan disallowing remote root access.
+```
+  sudo mysql_secure_installation
+```
