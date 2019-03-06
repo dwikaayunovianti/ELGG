@@ -233,7 +233,7 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 <br> <ul> <b>Plugins</b></ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
 
-<h1> Cara Pemakaian </h1>
+# Cara Pemakaian 
 Cara pemakaian **ELGG** cukup mudah, namun kurang memiliki tampilang yang menarik
 1. Sebelum menggunakan ELGG, kita perlu melakukan login terlebih dahulu .
     <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/11.PNG"></img>
