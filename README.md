@@ -216,7 +216,8 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1.png"></img>
  
-<h1>Konfigurasi </h1>
+<h1> Konfigurasi </h1>
+
 <ul> <b>Upgrade</b> : dapat meningkatkan instalasi dengan up to date </ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/3.png"></img>
 <ul> <b>Appearance </b> <br>
@@ -233,7 +234,6 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
 
 <h1> Cara Pemakaian </h1>
-
 Cara pemakaian **ELGG** cukup mudah, namun kurang memiliki tampilang yang menarik
 1. Sebelum menggunakan ELGG, kita perlu melakukan login terlebih dahulu .
     <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/11.PNG"></img>
