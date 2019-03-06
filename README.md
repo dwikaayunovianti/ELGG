@@ -4,7 +4,6 @@
 [Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 
-<h1>Sekilas Tentang</h1>
 # Sekilas Tentang
 [`^ Back To Home ^`](#)
 
