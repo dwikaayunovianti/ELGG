@@ -26,17 +26,17 @@
   ```
 
 2. Kemudian update sistem dengan menginstal Apache2 HTTP di server Ubuntu
-```
+  ```
   Install Apache
   sudo apt update
   sudo apt install apache2
-```
-
-    <ul><i> Berikut ini perintah untuk memberhentikan, memulai dan mengaktifkan Apache2 di server boots </i> </ul>
   ```
-               sudo systemctl stop apache2.service
-               sudo systemctl start apache2.service
-               sudo systemctl enable apache2.service
+
+  <i> Berikut ini perintah untuk memberhentikan, memulai dan mengaktifkan Apache2 di server boots </i> 
+  ```
+  sudo systemctl stop apache2.service
+  sudo systemctl start apache2.service
+  sudo systemctl enable apache2.service
   ```
 
 Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat IP address untuk mengetahui apakah halaman Apache2 bisa berjalan dengan baik atau tidak, jika berhasil akan muncul tampilan seperti ini :  
@@ -44,133 +44,132 @@ Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat
 <img src ="https://github.com/dwikaayunovianti/ELGG/blob/master/image/apache2_ubuntu_install.png"> </img>
 
 3. Langkah selanjutnya install MariaDB Database server
-```
+  ```
   $sudo apt-get install mariadb-server mariadb-client
 
-```
-    <ul> <i> Perintah untuk memberhentikan, memulai dan mengaktifkan MariaDB di server boot. Jalankan ini di Ubuntu 17.10 dan 18.04   LTS</i></ul>
-    ```
-               $sudo systemctl stop mariadb.service
-               $sudo systemctl start mariadb.service
-               $sudo systemctl enable mariadb.service
-    ```
+   ```
+ <i> Perintah untuk memberhentikan, memulai dan mengaktifkan MariaDB di server boot. Jalankan ini di Ubuntu 17.10 dan 18.04   LTS</i>
+   
+  ```
+  $sudo systemctl stop mariadb.service
+  $sudo systemctl start mariadb.service
+  $sudo systemctl enable mariadb.service
+  ```
 
 4. Selanjutnya jalankan perintah dibawah ini untuk mengamankan server MariaDB dengan membuat root password dan disallowing remote root access.
-```
+  ```
   $sudo mysql_secure_installation
-```
+  ```
 
 Setelah itu akan muncul pertanyaan, maka jawab seperti ini 
-```
-Enter current password for root (enter for none): Tekan Enter </ul>
-Set root password? [Y/n]: Y 
-New password: Masukkan Password
-Re-enter new password: Ulangi Password
-Remove anonymous users? [Y/n]: Y
-Disallow root login remotely? [Y/n]: Y
-Remove test database and access to it? [Y/n]:  Y 
-Reload privilege tables now? [Y/n]:  Y
-```
+  ```
+  Enter current password for root (enter for none): Tekan Enter </ul>
+  Set root password? [Y/n]: Y 
+  New password: Masukkan Password 
+  Re-enter new password: Ulangi Password
+  Remove anonymous users? [Y/n]: Y
+  Disallow root login remotely? [Y/n]: Y
+  Remove test database and access to it? [Y/n]:  Y 
+  Reload privilege tables now? [Y/n]:  Y
+  ```
 Kemudian restart MariaDB server
 
 Untuk menguji apakah MariaDB diinstal, ketik perintah di bawah ini untuk masuk ke server MariaDB
-```
-$ sudo mysql -u root -p	
-```
+  ```
+  $ sudo mysql -u root -p	
+  ```
 
 Jika berhasil maka akan muncul <i> MariaDB welcome message </i> 
 
 5. Jalankan perintah di bawah ini menginstal PHP 7.2 dan modul terkait.
-```
+  ```
   $ sudo apt-get install software-properties-common  
   $ sudo add-apt-repository ppa:ondrej/php 
   $ sudo apt update sudo apt install php7.2 libapache2-mod-php7.2 php7.2-common php7.2-sqlite3 php7.2-curl php7.2-intl php7.2-mbstring       php7.2-xmlrpc php7.2-mysql php7.2-gd php7.2-xml php7.2-cli php7.2-zip
   $ sudo nano /etc/php/7.2/apache2/php.ini
-```
+  ```
 Kemudian ubah pengaturan seperti di bawah ini lalu simpan
-``` 
-      file_uploads = On
-      allow_url_fopen = On
-      short_open_tag = On
-      memory_limit = 256M
-      upload_max_filesize = 100M
-      max_execution_time = 360
-```
+  ``` 
+  file_uploads = On
+  allow_url_fopen = On
+  short_open_tag = On
+  memory_limit = 256M
+  upload_max_filesize = 100M
+  max_execution_time = 360
+  ```
 
 6. Setelah menlakukan instal PHP dan modul terkait, restart Apache2 untuk memuat ulang konfigurasi PHP 
 Untuk me-restart Apache2, jalankan perintah di bawah ini : 
-```
+  ```
   $ sudo systemctl restart apache2.service
-```
+  ```
 
 7. Selanjutnya kita buat Database Magento.<br>
 <ul> Untuk masuk ke server database MariaDB, jalankan perintah di bawah ini. </ul>
 
-```
+  ```
   $sudo mysql -u root -p
-```
+  ```
 
 <ul> Buat database dengan nama elgg </ul>
-
-```
-    CREATE DATABASE elgg;
-```
+  
+  ```
+  CREATE DATABASE elgg;
+  ```
 
 <ul> Buat pengguna yang disebut elgguser dengan kata sandi baru </ul>
 
-```
+  ```
   CREATE USER 'elgguser'@'localhost' IDENTIFIED BY 'new_password_here';
-```
+  ```
 
 <ul>Kemudian beri pengguna akses penuh ke database.</ul>
 
-```
+  ```
   GRANT ALL ON elgg.* TO 'elgguser'@'localhost' IDENTIFIED BY 'user_password_here' WITH GRANT OPTION;
-```
+  ```
 
-<ul>Setelah semua nya diubah, simpan lalu keluar</ul>
+<ul> Setelah semua nya diubah, simpan lalu keluar</ul>
 
-```
+  ```
   FLUSH PRIVILEGES;
-```
-```
   EXIT;
-```
+  ```
  
  8. Lakukan download dan install Elgg
  Jalankan perintah di bawah ini untuk mengunduh konten terbaru Elgg CMS, kemudian unzip file unduhan dan 
  pindahkan konten ke direktori   root default Apache2
  
-```
+  ```
   cd /tmp && wget https://elgg.org/download/elgg-2.3.7.zip  
   unzip elgg-2.3.7.zip
   sudo mv elgg-2.3.7 /var/www/html/elgg
-```
-Selanjutnya, buat direktori data Elgg untuk menyimpan konten data 
-```
+  ```
+  Selanjutnya, buat direktori data Elgg untuk menyimpan konten data 
+  ```
   $ sudo mkdir -p /var/www/html/elgg/data
-```
-Selanjutnya ubah permission folder root
-```
+  ```
+  Selanjutnya ubah permission folder root
+  ```
   $sudo chown -R www-data:www-data /var/www/html/elgg/
   $sudo chmod -R 755 /var/www/html/elgg/
-```
+  ```
 
-9. Selanjutnya konfigurasi Situs Apache2 Elgg. 
-   <ul> Konfigurasikan file Apache2 untuk Elgg CMS. File ini akan mengontrol bagaimana pengguna mengakses konten Elgg CMS. Jalankan perintah di bawah ini untuk membuat file konfigurasi baru bernama elgg.conf</ul>
+  9. Selanjutnya konfigurasi Situs Apache2 Elgg. 
+      Konfigurasikan file Apache2 untuk Elgg CMS. File ini akan mengontrol bagaimana pengguna mengakses konten Elgg CMS. Jalankan perintah di bawah ini untuk membuat file konfigurasi baru bernama elgg.conf
    
-```
-       $sudo nano /etc/apache2/sites-available/elgg.conf
-```
-<br>
+      ```
+      $sudo nano /etc/apache2/sites-available/elgg.conf
+      ```
+      
 Kemudian ***copy*** dan ***paste*** konten di bawah ini ke dalam file dan simpan. Ganti baris dengan nama domain dan lokasi root direktori sendiri. 
-```
-<VirtualHost *:80>
-     ServerAdmin admin@example.com
-     DocumentRoot /var/www/html/elgg
-     ServerName localhost:8888
+  ```
+  <VirtualHost *:80>
+      ServerAdmin admin@example.com
+      DocumentRoot /var/www/html/elgg
+      ServerName localhost:8888
 
-     <Directory /var/www/html/elgg/>
+      <Directory /var/www/html/elgg/>
           Options FollowSymlinks
           AllowOverride All
           Require all granted
@@ -179,17 +178,17 @@ Kemudian ***copy*** dan ***paste*** konten di bawah ini ke dalam file dan simpan
      ErrorLog ${APACHE_LOG_DIR}/error.log
      CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-</VirtualHost>
-```
+  </VirtualHost>
+  ```
 
 10. Aktifkan Situs Elgg CMS dan Modul Tulis Ulang
 
 Setelah mengkonfigurasi VirtualHost di atas, aktifkan dengan menjalankan perintah di bawah ini, kemudian mulai ulang server Apache2
-```
+  ```
   $sudo a2ensite elgg.conf
   $sudo a2enmod rewrite
   $sudo systemctl restart apache2.service
-```
+  ```
 
 11. Selanjutnya, buka brwoser dan buka URL, setelah itu lanjutkan dengan instalasi<br>
 Ketikan *localhost:8888* di browser 
