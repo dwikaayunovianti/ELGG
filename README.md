@@ -279,7 +279,7 @@ Cara pemakaian **ELGG** cukup mudah, namun kurang memiliki tampilang yang menari
 6. Jika pengguna ingin membuat grup sosial, maka pengguna hanya perlu meng-klik tab Groups dan memilih ‘Create a New Group’.  
      <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/19.PNG"></img>
      
-<h1>Pembahasan</h1>
+# Pembahasan
 [`^ Back To Home ^`](#)
 
 Elgg adalah salah atau varian jenis CMS yang content nya di khususkan untuk situs jejaring sosial yang menawarkan blogging, jaringan, komunitas, mengumpulkan berita. Elgg digunakan didalam jaringan internal/local dengan bantuan web server tentunya bisa berbasis linux server maupun windows. Tanpa harus bisa memahami bahasa pemrograman apapun, elgg dapat membantu kita dalam membuat sebuah jejaring sosial dengan mudah. Selain itu Elgg ini tergolong freeware dan untuk lisensinya sendiri termasuk open source dan kita bebas untuk mengembangkannya.
