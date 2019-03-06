@@ -282,9 +282,10 @@ Jika dibandingkan dengan jejaring sosial Facebook, Elgg memiliki beberapa keungg
   -**Facebook**  menyediakan tampilan yang lebih menarik, bisa menampung banyak pengguna yang akan mengaksesnya, tersedia fitur-fitur yang jumlahnya lebih banyak dan menarik, tidak perlu di hosting saat ingin berbagi kepada yang lain. 
   -Sedangkan **ELGG** memiliki tampilan yang lebih user-friendly saat pertama kali menggunakannya, fleksibel untuk membuat jaringan sosial, perlu di hosting agar terlebih dahulu untuk menempatkan file php dari Elgg.
   
-<h1> Referensi </h1>
-https://github.com/Elgg/Elgg
-https://websiteforstudents.com/install-elgg-social-networking-engine-on-ubuntu-16-04-17-10-18-04-with-apache2-mariadb-and-php-7-2-support/
-https://www.visigraphic.com/artikel/elgg-membuat-web-jejaring-sosial
+# Referensi 
+
+1. https://github.com/Elgg/Elgg
+2. https://websiteforstudents.com/install-elgg-social-networking-engine-on-ubuntu-16-04-17-10-18-04-with-apache2-mariadb-and-php-7-2-support/
+3. https://www.visigraphic.com/artikel/elgg-membuat-web-jejaring-sosial
 
 
