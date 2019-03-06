@@ -32,12 +32,12 @@
   sudo apt install apache2
 ```
 
-<i> Berikut ini perintah untuk memberhentikan, memulai dan mengaktifkan Apache2 di server boots </i>
-```
-  sudo systemctl stop apache2.service
-  sudo systemctl start apache2.service
-  sudo systemctl enable apache2.service
-```
+    <ul><i> Berikut ini perintah untuk memberhentikan, memulai dan mengaktifkan Apache2 di server boots </i> </ul>
+  ```
+               sudo systemctl stop apache2.service
+               sudo systemctl start apache2.service
+               sudo systemctl enable apache2.service
+  ```
 
 Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat IP address untuk mengetahui apakah halaman Apache2 bisa berjalan dengan baik atau tidak, jika berhasil akan muncul tampilan seperti ini :  
 
@@ -48,13 +48,12 @@ Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat
   $sudo apt-get install mariadb-server mariadb-client
 
 ```
-<i> Perintah untuk memberhentikan, memulai dan mengaktifkan MariaDB di server boot. Jalankan ini di Ubuntu 17.10 dan 18.04 LTS
-</i>
-```
-  $sudo systemctl stop mariadb.service
-  $sudo systemctl start mariadb.service
-  $sudo systemctl enable mariadb.service
-```
+    <ul> <i> Perintah untuk memberhentikan, memulai dan mengaktifkan MariaDB di server boot. Jalankan ini di Ubuntu 17.10 dan 18.04   LTS</i></ul>
+    ```
+               $sudo systemctl stop mariadb.service
+               $sudo systemctl start mariadb.service
+               $sudo systemctl enable mariadb.service
+    ```
 
 4. Selanjutnya jalankan perintah dibawah ini untuk mengamankan server MariaDB dengan membuat root password dan disallowing remote root access.
 ```
@@ -63,14 +62,14 @@ Selanjutnya lakukan testing Apache2 dengan cara buka browser lalu masukan alamat
 
 Setelah itu akan muncul pertanyaan, maka jawab seperti ini 
 ```
-<ul> -Enter current password for root (enter for none): Tekan Enter </ul>
-<ul> -Set root password? [Y/n]: Y </ul> 
-<ul> -New password: Masukkan Password</ul>
-<ul> -Re-enter new password: Ulangi Password</ul>
-<ul> -Remove anonymous users? [Y/n]: Y</ul>
-<ul> -Disallow root login remotely? [Y/n]: Y</ul>
-<ul> -Remove test database and access to it? [Y/n]:  Y</ul> 
-<ul> -Reload privilege tables now? [Y/n]:  Y</ul> 
+Enter current password for root (enter for none): Tekan Enter </ul>
+Set root password? [Y/n]: Y 
+New password: Masukkan Password
+Re-enter new password: Ulangi Password
+Remove anonymous users? [Y/n]: Y
+Disallow root login remotely? [Y/n]: Y
+Remove test database and access to it? [Y/n]:  Y 
+Reload privilege tables now? [Y/n]:  Y
 ```
 Kemudian restart MariaDB server
 
@@ -89,13 +88,13 @@ Jika berhasil maka akan muncul <i> MariaDB welcome message </i>
   $ sudo nano /etc/php/7.2/apache2/php.ini
 ```
 Kemudian ubah pengaturan seperti di bawah ini lalu simpan
-```
-<ul> file_uploads = On</ul>
-<ul> allow_url_fopen = On</ul>
-<ul> short_open_tag = On</ul>
-<ul> memory_limit = 256M</ul>
-<ul> upload_max_filesize = 100M </ul>
-<ul>max_execution_time = 360</ul><br>
+``` 
+      file_uploads = On
+      allow_url_fopen = On
+      short_open_tag = On
+      memory_limit = 256M
+      upload_max_filesize = 100M
+      max_execution_time = 360
 ```
 
 6. Setelah menlakukan instal PHP dan modul terkait, restart Apache2 untuk memuat ulang konfigurasi PHP 
@@ -106,31 +105,42 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 
 7. Selanjutnya kita buat Database Magento.<br>
 <ul> Untuk masuk ke server database MariaDB, jalankan perintah di bawah ini. </ul>
+
 ```
   $sudo mysql -u root -p
 ```
-<ul> Buat database dengan nama *elgg* </ul>
+
+<ul> Buat database dengan nama elgg </ul>
+
 ```
     CREATE DATABASE elgg;
 ```
+
 <ul> Buat pengguna yang disebut elgguser dengan kata sandi baru </ul>
+
 ```
   CREATE USER 'elgguser'@'localhost' IDENTIFIED BY 'new_password_here';
 ```
+
 <ul>Kemudian beri pengguna akses penuh ke database.</ul>
+
 ```
   GRANT ALL ON elgg.* TO 'elgguser'@'localhost' IDENTIFIED BY 'user_password_here' WITH GRANT OPTION;
 ```
+
 <ul>Setelah semua nya diubah, simpan lalu keluar</ul>
- ```
+
+```
   FLUSH PRIVILEGES;
-  
+```
+```
   EXIT;
- ```
+```
  
  8. Lakukan download dan install Elgg
+ Jalankan perintah di bawah ini untuk mengunduh konten terbaru Elgg CMS, kemudian unzip file unduhan dan 
+ pindahkan konten ke direktori   root default Apache2
  
-Jalankan perintah di bawah ini untuk mengunduh konten terbaru Elgg CMS, kemudian unzip file unduhan dan pindahkan konten ke direktori   root default Apache2
 ```
   cd /tmp && wget https://elgg.org/download/elgg-2.3.7.zip  
   unzip elgg-2.3.7.zip
@@ -205,18 +215,18 @@ Ketikan *localhost:8888* di browser
 
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1.png"></img
  
-#Konfigurasi
+<h1>Konfigurasi </h1>
 <ul> <b>Upgrade</b> : dapat meningkatkan instalasi dengan up to date </ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/3.png"></img>
 <ul> <b>Appearance </b> <br>
   <ul> <i>Menu items </i>: memilih menu yang ingin ditampilkan sebagai link dan juga dapat mengatur secara custom, dengan mengisi URL dan nama yang tampil.</ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/4.png"></img>
 
-<ul> <i>Edit Profile Fields</i> : dapat mengedit profil, dengan memasukkan label dan memilih tipe profile. </ul><>
-<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/5.png"></img>
+<br><ul> <i>Edit Profile Fields</i> : dapat mengedit profil, dengan memasukkan label dan memilih tipe profile. </ul>
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/5.png"></img> 
 
-<ul> <i>Default Widgets</i></ul>
-<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/6.png"></img> <br>
+<br><ul> <i>Default Widgets</i></ul>
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/6.png"></img>
 
-<ul> <b>Plugins</b></ul>
+<br> <ul> <b>Plugins</b></ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
