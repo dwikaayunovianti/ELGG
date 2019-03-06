@@ -216,7 +216,7 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1.png"></img>
  
-<h1> Konfigurasi </h1>
+# Konfigurasi 
 
 <ul> <b>Upgrade</b> : dapat meningkatkan instalasi dengan up to date </ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/3.png"></img>
