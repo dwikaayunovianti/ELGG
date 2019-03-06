@@ -231,3 +231,60 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 
 <br> <ul> <b>Plugins</b></ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
+
+<h1> Cara Pemakaian </h1>
+
+Cara pemakaian **ELGG** cukup mudah, namun kurang memiliki tampilang yang menarik
+1. Sebelum menggunakan ELGG, kita perlu melakukan login terlebih dahulu .
+    <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/11.PNG"></img>
+    
+2. Setelah Login, kita akan masuk ke halaman Dashboard yang menampilkan aktivitas penggunanya. Disini juga pengguna dapat memilih ingin melihat aktivitas secara keseluruhan atau diri sendiri dan bisa juga melihat aktivitas dari temannya saja.
+    <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/12.PNG"></img>
+ 
+3. Jika pengguna ingin membuat blog, maka pengguna hanya perlu meng-klik tab Blog dan memilih ‘ Add blog Post’, dan kemudian dapat di share.
+    <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/13.PNG"></img>
+    
+    Lalu mengisi konten blog
+    <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/14.PNG"></img>
+
+4. Jika pengguna ingin mem-bookmark website yang diinginkan , maka pengguna hanya perlu meng-klik tab Bookmark dan memilih ‘ Add a bookmark’. 
+    <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/15.PNG"></img>
+    <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/16.PNG"></img>
+    
+5. Jika pengguna ingin meng-upload file yang diinginkan , maka pengguna hanya perlu meng-klik tab Files dan memilih ‘Upload a File’.  Setelah itu, pengguna dapat melihat semua file yang telah diupload baik milik teman, atau bisa melihat semuanya.
+     <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/17.PNG"></img>
+     Lalu memilih file yang di upload
+     <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/18.PNG"></img>
+     
+6. Jika pengguna ingin membuat grup sosial, maka pengguna hanya perlu meng-klik tab Groups dan memilih ‘Create a New Group’.  
+     <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/19.PNG"></img>
+     
+<h1>Pembahasan</h1>
+
+Elgg adalah salah atau varian jenis CMS yang content nya di khususkan untuk situs jejaring sosial yang menawarkan blogging, jaringan, komunitas, mengumpulkan berita. Elgg digunakan didalam jaringan internal/local dengan bantuan web server tentunya bisa berbasis linux server maupun windows. Tanpa harus bisa memahami bahasa pemrograman apapun, elgg dapat membantu kita dalam membuat sebuah jejaring sosial dengan mudah. Selain itu Elgg ini tergolong freeware dan untuk lisensinya sendiri termasuk open source dan kita bebas untuk mengembangkannya.
+
+<h2> Kelebihan </h2>
+Kelebihan yang dimiliki oleh ELGG adalah :
+  -Instalasi yang mudah dan cepat.
+  -Mudah digunakan dan dipahami
+  -Fitur awal sudah memiliki kemampuan untuk menambahkan friends, membuat blog, menuliskan profil diri dan memasang foto, membuat grup.
+  -Pilihan themes/template yang cukup banyak
+  -Tambahan plugins diantaranya calendar, event, bookmark, photos, quote, wire/twitter clone, import friend list, custom style, embed media & video dan banyak lagi lainnya
+  -Mudah didapat dan dikembangkan karena termasuk software gratis dan open source.
+  
+<h2> Kekurangan </h2>
+Kekurangan yang dimiliki oleh ELGG adalah :
+  -Diperlukannya hostingan agar bisa diakses banyak orang dengan lancar
+  -Tampilan nya yang kurang menarik
+  -Fitur-fiturnya kurang banyak
+  
+Jika dibandingkan dengan jejaring sosial Facebook, Elgg memiliki beberapa keunggulan dan kelemahan. Berikut adalah beberapa perbandingan antara kedua jejaring sosial ini :
+  -**Facebook**  menyediakan tampilan yang lebih menarik, bisa menampung banyak pengguna yang akan mengaksesnya, tersedia fitur-fitur yang jumlahnya lebih banyak dan menarik, tidak perlu di hosting saat ingin berbagi kepada yang lain. 
+  -Sedangkan **ELGG** memiliki tampilan yang lebih user-friendly saat pertama kali menggunakannya, fleksibel untuk membuat jaringan sosial, perlu di hosting agar terlebih dahulu untuk menempatkan file php dari Elgg.
+  
+<h1> Referensi </h1>
+https://github.com/Elgg/Elgg
+https://websiteforstudents.com/install-elgg-social-networking-engine-on-ubuntu-16-04-17-10-18-04-with-apache2-mariadb-and-php-7-2-support/
+https://www.visigraphic.com/artikel/elgg-membuat-web-jejaring-sosial
+
+
