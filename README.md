@@ -1,7 +1,7 @@
 ## ELGG
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1200px-Elgg.jpg"></img>
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Maintenance](#otomatisasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Maintenance](#maintenance) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 # Sekilas Tentang
@@ -270,6 +270,7 @@ Plugin digunakan untuk mengatur fungsi tertentu yang memungkinkan aplikasi atau 
 
 # Maintenance
 [`^ Back To Home ^`](#)
+
 Ketika dalam mode maintenance situs hanya admin yang bisa masuk
 Admin dapat mengonfigurasi (dalam pengaturan plugin) jika situs sedang dalam perbaikan. 
 <img src ="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
