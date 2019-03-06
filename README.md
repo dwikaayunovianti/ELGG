@@ -105,101 +105,102 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
   ```
 
 7. Selanjutnya kita buat Database Magento.<br>
-<ul> Untuk masuk ke server database MariaDB, jalankan perintah di bawah ini. </ul>
+    - Untuk masuk ke server database MariaDB, jalankan perintah di bawah ini. </ul>
 
-  ```
-  $sudo mysql -u root -p
-  ```
-
-<ul> Buat database dengan nama elgg </ul>
+       ```
+       $sudo mysql -u root -p
+       ```
   
-  ```
-  CREATE DATABASE elgg;
-  ```
+    - Buat database dengan nama elgg </ul>
+  
+       ```
+       CREATE DATABASE elgg;
+       ```
 
-<ul> Buat pengguna yang disebut elgguser dengan kata sandi baru </ul>
+    - Buat pengguna yang disebut elgguser dengan kata sandi baru </ul>
 
-  ```
-  CREATE USER 'elgguser'@'localhost' IDENTIFIED BY 'new_password_here';
-  ```
+       ```
+       CREATE USER 'elgguser'@'localhost' IDENTIFIED BY 'new_password_here';
+       ```
 
-<ul>Kemudian beri pengguna akses penuh ke database.</ul>
+    - Kemudian beri pengguna akses penuh ke database.</ul>
 
-  ```
-  GRANT ALL ON elgg.* TO 'elgguser'@'localhost' IDENTIFIED BY 'user_password_here' WITH GRANT OPTION;
-  ```
+       ```
+       GRANT ALL ON elgg.* TO 'elgguser'@'localhost' IDENTIFIED BY 'user_password_here' WITH GRANT OPTION;
+       ```
 
-<ul> Setelah semua nya diubah, simpan lalu keluar</ul>
+    - Setelah semua nya diubah, simpan lalu keluar</ul>
 
-  ```
-  FLUSH PRIVILEGES;
-  EXIT;
-  ```
+       ```
+       FLUSH PRIVILEGES;
+       EXIT;
+       ```
  
  8. Lakukan download dan install Elgg
- Jalankan perintah di bawah ini untuk mengunduh konten terbaru Elgg CMS, kemudian unzip file unduhan dan 
- pindahkan konten ke direktori   root default Apache2
+    - Jalankan perintah di bawah ini untuk mengunduh konten terbaru Elgg CMS, kemudian unzip file unduhan dan pindahkan konten ke direktori root default Apache2
  
-  ```
-  cd /tmp && wget https://elgg.org/download/elgg-2.3.7.zip  
-  unzip elgg-2.3.7.zip
-  sudo mv elgg-2.3.7 /var/www/html/elgg
-  ```
-  Selanjutnya, buat direktori data Elgg untuk menyimpan konten data 
-  ```
-  $ sudo mkdir -p /var/www/html/elgg/data
-  ```
-  Selanjutnya ubah permission folder root
-  ```
-  $sudo chown -R www-data:www-data /var/www/html/elgg/
-  $sudo chmod -R 755 /var/www/html/elgg/
-  ```
-
-  9. Selanjutnya konfigurasi Situs Apache2 Elgg. 
-      Konfigurasikan file Apache2 untuk Elgg CMS. File ini akan mengontrol bagaimana pengguna mengakses konten Elgg CMS. Jalankan perintah di bawah ini untuk membuat file konfigurasi baru bernama elgg.conf
-   
       ```
-      $sudo nano /etc/apache2/sites-available/elgg.conf
+      cd /tmp && wget https://elgg.org/download/elgg-2.3.7.zip  
+      unzip elgg-2.3.7.zip
+      sudo mv elgg-2.3.7 /var/www/html/elgg
       ```
       
-Kemudian ***copy*** dan ***paste*** konten di bawah ini ke dalam file dan simpan. Ganti baris dengan nama domain dan lokasi root direktori sendiri. 
-  ```
-  <VirtualHost *:80>
-      ServerAdmin admin@example.com
-      DocumentRoot /var/www/html/elgg
-      ServerName localhost:8888
+    - Selanjutnya, buat direktori data Elgg untuk menyimpan konten data 
+  
+      ```
+      $ sudo mkdir -p /var/www/html/elgg/data
+      ```
+      
+    - Selanjutnya ubah permission folder root
+  
+      ```
+      $sudo chown -R www-data:www-data /var/www/html/elgg/
+      $sudo chmod -R 755 /var/www/html/elgg/
+      ```
 
-      <Directory /var/www/html/elgg/>
-          Options FollowSymlinks
-          AllowOverride All
-          Require all granted
-     </Directory>
+  9. Selanjutnya konfigurasi Situs Apache2 Elgg. 
+     - Konfigurasikan file Apache2 untuk Elgg CMS. File ini akan mengontrol bagaimana pengguna mengakses konten Elgg CMS. Jalankan perintah di bawah ini untuk membuat file konfigurasi baru bernama elgg.conf
+   
+        ```
+        $sudo nano /etc/apache2/sites-available/elgg.conf
+        ```
+      
+     - Kemudian ***copy*** dan ***paste*** konten di bawah ini ke dalam file dan simpan. Ganti baris dengan nama domain dan lokasi root direktori sendiri. 
+        ```
+        <VirtualHost *:80>
+            ServerAdmin admin@example.com
+              DocumentRoot /var/www/html/elgg
+              ServerName localhost:8888
 
-     ErrorLog ${APACHE_LOG_DIR}/error.log
-     CustomLog ${APACHE_LOG_DIR}/access.log combined
+            <Directory /var/www/html/elgg/>
+                Options FollowSymlinks
+                AllowOverride All
+                Require all granted
+            </Directory>
 
-  </VirtualHost>
-  ```
+         ErrorLog ${APACHE_LOG_DIR}/error.log
+         CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-10. Aktifkan Situs Elgg CMS dan Modul Tulis Ulang
+        </VirtualHost>
+         ```
 
-Setelah mengkonfigurasi VirtualHost di atas, aktifkan dengan menjalankan perintah di bawah ini, kemudian mulai ulang server Apache2
-  ```
-  $sudo a2ensite elgg.conf
-  $sudo a2enmod rewrite
-  $sudo systemctl restart apache2.service
-  ```
+  10. Aktifkan Situs Elgg CMS dan Modul Tulis Ulang
+      - Setelah mengkonfigurasi VirtualHost di atas, aktifkan dengan menjalankan perintah di bawah ini, kemudian mulai ulang server Apache2
+        ```
+        $sudo a2ensite elgg.conf
+        $sudo a2enmod rewrite
+        $sudo systemctl restart apache2.service
+        ```
 
-11. Selanjutnya, buka brwoser dan buka URL, setelah itu lanjutkan dengan instalasi<br>
-Ketikan *localhost:8888* di browser 
+  11. Selanjutnya, buka brwoser dan buka URL, setelah itu lanjutkan dengan instalasi<br>
+      Ketikan *localhost:8888* di browser 
 
-<i> Halaman Elgg installation wizard, klik next</i><br>
+      <i> Halaman Elgg installation wizard, klik next</i><br>
 
-<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/elgg_ubuntu_install.png"></img> 
+   <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/elgg_ubuntu_install.png"></img> 
 
 <i> Selanjutnya isi data  database pada kolom  sesuai dengan yang sudah ditentukan sebelumnya, klik next</i>
-
-  Pada bagian database username dan password sesuaikan dengan nama yang kalian buat sebelumnya 
+    Pada bagian database username dan password sesuaikan dengan nama yang kalian buat sebelumnya 
 
    <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/elgg_ubuntu_install_1.png"></img>
 
