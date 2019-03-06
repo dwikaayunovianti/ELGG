@@ -1,8 +1,8 @@
 ## ELGG
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1200px-Elgg.jpg"></img>
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
-:---:|:---:|:---:|:---:|:---:|:---:
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 <h1>Sekilas Tentang</h1>
 <p> Elgg adalah sebuah social networking framework dan merupakan varian jenis CMS. CMS (Content Management System) sendiri merupakan aplikasi dari kumpulan bahasa pemrograman yang terhimpun menjadi satu dengan tujuan untuk mempermudah dalam mengelola dan memanajemen suatu website. CMS memiliki jenis yang beragam, misalnya saja, wordpress untuk blog, joomla untuk blog ataupun forum, lokomedia untuk toko online, dan Elgg sebagai situs jejaring sosial. <p>
@@ -232,6 +232,16 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 
 <br> <ul> <b>Plugins</b></ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
+
+# Otomatisasi 
+Terdapat cara alternatif lain jika kalian masih merasa kesulitan dalam meng-install Elgg yaitu dengan menggunakan layanan yang tersedia pada web-hosting provider yaitu dengan ***SimpleScript***. Dengan layanan tersebut kita hanya perlu satu kali klik untuk meng-install. Cara menginstalnya menggunakan ****SimpleScripts*** yaitu :
+
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/20.jpg"></img>
+
+1. Kita membutuhkan Akun Hosting atau coba di hosting sendiri.
+2. Masukkan Informasi FTP Anda ke dalam SimpleScripts dan pilih di mana Elgg akan  diinstal.
+3. Kemudian selesai elgg akan terinstall ke situs web kita.
+
 
 # Cara Pemakaian 
 Cara pemakaian **ELGG** cukup mudah, namun kurang memiliki tampilang yang menarik
