@@ -1,7 +1,7 @@
 ## ELGG
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1200px-Elgg.jpg"></img>
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Maintenance](#otomatisasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 # Sekilas Tentang
@@ -234,10 +234,49 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/5.png"></img> 
 
 <br><ul> <i>Default Widgets</i></ul>
+Konten area yang dapat digunakan pengguna untuk menyesuaikan tata letak dan dapat dikustomisasi oleh pemiliknya untuk menampilkan konten lebih banyak ataupun lebih sedikit.
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/6.png"></img>
 
-<br> <ul> <b>Plugins</b></ul>
+<b>Plugin</b>
+Plugin digunakan untuk mengatur fungsi tertentu yang memungkinkan aplikasi atau program untuk menjalankan fitur tersebut.
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
+
+<b>Setting</b>
+  - ***Basic Settings*** : untuk mengatur informasi dasar mengenai site yang dimiliki. Seperti nama site, penjelasan singkat, alamat email, default nomor item per halaman, serta default bahasa yang digunakan
+
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/21.png"></img>
+
+  - ***Advance Setting*** : untuk mengatur beberapa informasi yaitu informasi sistemnya , caching, konten akses yaitu akses yang diizinkan, keamanan, serta logging dan debugging
+
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/22.png"></img>
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/24.png"></img>
+
+
+  - ***Garbage Collector*** : mengatur berapa kali pengambilan trash dilakukan
+  
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/25.png"></img>
+
+  - ***Groups*** : mengatur hal yang berhubungan dengan grup, yaitu mengatur untuk mengizinkan private group, dan mengatur siapa saja yang bisa membuat grup
+ 
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/26.png"></img>
+
+  - ***Log Rotate*** : mengatur kapan sistem menyimpan sebagai arsip dan kapan menghapus arsipan yang sudah lama
+
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/27.png"></img>
+
+- ***The Wire*** : mengatur maksimal karakter saat membuat pesan wire
+
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/28.png"></img>
+
+# Maintenance
+[`^ Back To Home ^`](#)
+Ketika dalam mode maintenance situs hanya admin yang bisa masuk
+Admin dapat mengonfigurasi (dalam pengaturan plugin) jika situs sedang dalam perbaikan. 
+<img src ="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
+
+Informasi tambahan bahwa situs dengan dalam proses maintenance dapat dimasukkan di :
+<img src ="https://github.com/dwikaayunovianti/ELGG/blob/master/image/29.png"></img>
+
 
 # Otomatisasi 
 [`^ Back To Home ^`](#)
