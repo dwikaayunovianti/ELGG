@@ -2,7 +2,7 @@
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1200px-Elgg.jpg"></img>
 
 [Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Maintenance](#otomatisasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 # Sekilas Tentang
 [`^ Back To Home ^`](#)
