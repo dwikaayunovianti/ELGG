@@ -157,11 +157,12 @@ Selanjutnya ubah permission folder root
 ```
 
 9. Selanjutnya konfigurasi Situs Apache2 Elgg. 
-<p>Konfigurasikan file Apache2 untuk Elgg CMS. File ini akan mengontrol bagaimana pengguna mengakses konten Elgg CMS. Jalankan perintah di bawah ini untuk membuat file konfigurasi baru bernama elgg.conf</p>
+   <ul> Konfigurasikan file Apache2 untuk Elgg CMS. File ini akan mengontrol bagaimana pengguna mengakses konten Elgg CMS. Jalankan perintah di bawah ini untuk membuat file konfigurasi baru bernama elgg.conf</ul>
+   
 ```
-  $sudo nano /etc/apache2/sites-available/elgg.conf
+       $sudo nano /etc/apache2/sites-available/elgg.conf
 ```
-
+<br>
 Kemudian ***copy*** dan ***paste*** konten di bawah ini ke dalam file dan simpan. Ganti baris dengan nama domain dan lokasi root direktori sendiri. 
 ```
 <VirtualHost *:80>
@@ -183,7 +184,7 @@ Kemudian ***copy*** dan ***paste*** konten di bawah ini ke dalam file dan simpan
 
 10. Aktifkan Situs Elgg CMS dan Modul Tulis Ulang
 
-Setelah mengkonfigurasi VirtualHost di atas, aktifkan dengan menjalankan perintah di bawah ini, kemudian mulai ulang server Apache2\
+Setelah mengkonfigurasi VirtualHost di atas, aktifkan dengan menjalankan perintah di bawah ini, kemudian mulai ulang server Apache2
 ```
   $sudo a2ensite elgg.conf
   $sudo a2enmod rewrite
@@ -199,9 +200,9 @@ Ketikan *localhost:8888* di browser
 
 <i> Selanjutnya isi data  database pada kolom  sesuai dengan yang sudah ditentukan sebelumnya, klik next</i>
 
-    <ul> Pada bagian database username dan password sesuaikan dengan nama yang kalian buat sebelumnya </ul>
+  Pada bagian database username dan password sesuaikan dengan nama yang kalian buat sebelumnya 
 
-        <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/elgg_ubuntu_install_1.png"></img>
+   <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/elgg_ubuntu_install_1.png"></img>
 
 <i> Selanjutnya isi  kolom untuk konfigurasi situs, klik next </i> <br>
 
@@ -213,7 +214,7 @@ Ketikan *localhost:8888* di browser
 
 <i> Setelah berhasil, maka akan masuk ke halaman utama sebagai admin </i>
 
-<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1.png"></img
+<img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1.png"></img>
  
 <h1>Konfigurasi </h1>
 <ul> <b>Upgrade</b> : dapat meningkatkan instalasi dengan up to date </ul>
