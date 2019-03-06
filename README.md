@@ -14,7 +14,8 @@
 
 <p> Meskipun tidak sepowerfull facebook namun elgg memiliki banyak fitur yang mumpuni untuk kita coba diantaranya : melakukan update status, tambah pertemanan, membuat group, upload file/foto, ganti foto profil, social  networking, weblog, bookmark, instant messaging, file repository, access control, tagging, customization, dan community building. </p>
 
-<h1>Instalasi</h1>
+#Instalasi
+
 [`^ Back To Home ^`](#)
 
 <h3>Kebutuhan Sistem : </h3>
@@ -24,7 +25,6 @@
 -PHP 7 </p>
 
 <h3>Proses Instalasi :</h3>
-[`^ Back To Home ^`](#)
 
 1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost) <br>
   ```
