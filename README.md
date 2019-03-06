@@ -5,6 +5,9 @@
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 <h1>Sekilas Tentang</h1>
+# Sekilas Tentang
+[`^ Back To Home ^`](#)
+
 <p> Elgg adalah sebuah social networking framework dan merupakan varian jenis CMS. CMS (Content Management System) sendiri merupakan aplikasi dari kumpulan bahasa pemrograman yang terhimpun menjadi satu dengan tujuan untuk mempermudah dalam mengelola dan memanajemen suatu website. CMS memiliki jenis yang beragam, misalnya saja, wordpress untuk blog, joomla untuk blog ataupun forum, lokomedia untuk toko online, dan Elgg sebagai situs jejaring sosial. <p>
 
 <p> Elgg ini tergolong freeware dan untuk lisensinya sendiri termasuk open source dan kita bebas untuk mengembangkannya. Elgg memungkin kita untuk menjalankan jejaring sosialnya sendiri yang digunakan didalam jaringan internal/local dengan bantuan web server tentunya bisa berbasis linux server maupun windows. Tidak hanya itu Elgg juga bisa kita gunakan di shared hosting maupun di vps. Elgg beroperasi pada lingkungan LAMP (Linux, Apache, MySql dan Php) dan mudah untuk diinstal dan dikonfigurasi. </p>
@@ -12,6 +15,8 @@
 <p> Meskipun tidak sepowerfull facebook namun elgg memiliki banyak fitur yang mumpuni untuk kita coba diantaranya : melakukan update status, tambah pertemanan, membuat group, upload file/foto, ganti foto profil, social  networking, weblog, bookmark, instant messaging, file repository, access control, tagging, customization, dan community building. </p>
 
 <h1>Instalasi</h1>
+[`^ Back To Home ^`](#)
+
 <h3>Kebutuhan Sistem : </h3>
 <p> -Unix, Linux atau Windows<br>
 -MariaDb<br>
@@ -19,6 +24,7 @@
 -PHP 7 </p>
 
 <h3>Proses Instalasi :</h3>
+[`^ Back To Home ^`](#)
 
 1. Jalankan agar Virtual Machine bisa diakses dari luar melalui alamat IP host (localhost) <br>
   ```
@@ -217,6 +223,7 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/1.png"></img>
  
 # Konfigurasi 
+[`^ Back To Home ^`](#)
 
 <ul> <b>Upgrade</b> : dapat meningkatkan instalasi dengan up to date </ul>
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/3.png"></img>
@@ -234,6 +241,8 @@ Untuk me-restart Apache2, jalankan perintah di bawah ini :
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/7.png"></img>
 
 # Otomatisasi 
+[`^ Back To Home ^`](#)
+
 Terdapat cara alternatif lain jika kalian masih merasa kesulitan dalam meng-install Elgg yaitu dengan menggunakan layanan yang tersedia pada web-hosting provider yaitu dengan ***SimpleScript***. Dengan layanan tersebut kita hanya perlu satu kali klik untuk meng-install. Cara menginstalnya menggunakan ****SimpleScripts*** yaitu :
 
 <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/20.jpg"></img>
@@ -244,6 +253,8 @@ Terdapat cara alternatif lain jika kalian masih merasa kesulitan dalam meng-inst
 
 
 # Cara Pemakaian 
+[`^ Back To Home ^`](#)
+
 Cara pemakaian **ELGG** cukup mudah, namun kurang memiliki tampilang yang menarik
 1. Sebelum menggunakan ELGG, kita perlu melakukan login terlebih dahulu .
     <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/11.PNG"></img>
@@ -270,6 +281,7 @@ Cara pemakaian **ELGG** cukup mudah, namun kurang memiliki tampilang yang menari
      <img src="https://github.com/dwikaayunovianti/ELGG/blob/master/image/19.PNG"></img>
      
 <h1>Pembahasan</h1>
+[`^ Back To Home ^`](#)
 
 Elgg adalah salah atau varian jenis CMS yang content nya di khususkan untuk situs jejaring sosial yang menawarkan blogging, jaringan, komunitas, mengumpulkan berita. Elgg digunakan didalam jaringan internal/local dengan bantuan web server tentunya bisa berbasis linux server maupun windows. Tanpa harus bisa memahami bahasa pemrograman apapun, elgg dapat membantu kita dalam membuat sebuah jejaring sosial dengan mudah. Selain itu Elgg ini tergolong freeware dan untuk lisensinya sendiri termasuk open source dan kita bebas untuk mengembangkannya.
 
@@ -293,6 +305,7 @@ Jika dibandingkan dengan jejaring sosial Facebook, Elgg memiliki beberapa keungg
   -Sedangkan **ELGG** memiliki tampilan yang lebih user-friendly saat pertama kali menggunakannya, fleksibel untuk membuat jaringan sosial, perlu di hosting agar terlebih dahulu untuk menempatkan file php dari Elgg.
   
 # Referensi 
+[`^ Back To Home ^`](#)
 
 1. https://github.com/Elgg/Elgg
 2. https://websiteforstudents.com/install-elgg-social-networking-engine-on-ubuntu-16-04-17-10-18-04-with-apache2-mariadb-and-php-7-2-support/
