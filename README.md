@@ -326,18 +326,18 @@ Elgg adalah salah atau varian jenis CMS yang content nya di khususkan untuk situ
 
 <h2> Kelebihan </h2>
 Kelebihan yang dimiliki oleh ELGG adalah :
-  -Instalasi yang mudah dan cepat.
-  -Mudah digunakan dan dipahami
-  -Fitur awal sudah memiliki kemampuan untuk menambahkan friends, membuat blog, menuliskan profil diri dan memasang foto, membuat grup.
-  -Pilihan themes/template yang cukup banyak
-  -Tambahan plugins diantaranya calendar, event, bookmark, photos, quote, wire/twitter clone, import friend list, custom style, embed media & video dan banyak lagi lainnya
-  -Mudah didapat dan dikembangkan karena termasuk software gratis dan open source.
+<ul> -Instalasi yang mudah dan cepat.</ul>
+<ul> -Mudah digunakan dan dipahami</ul>
+<ul> -Fitur awal sudah memiliki kemampuan untuk menambahkan friends, membuat blog, menuliskan profil diri dan memasang foto, membuat grup.</ul>
+<ul> -Pilihan themes/template yang cukup banyak</ul>
+<ul> -Tambahan plugins diantaranya calendar, event, bookmark, photos, quote, wire/twitter clone, import friend list, custom style, embed media & video dan banyak lagi lainnya</ul>
+<ul> -Mudah didapat dan dikembangkan karena termasuk software gratis dan open source. </ul>
   
 <h2> Kekurangan </h2>
 Kekurangan yang dimiliki oleh ELGG adalah :
-  -Diperlukannya hostingan agar bisa diakses banyak orang dengan lancar
-  -Tampilan nya yang kurang menarik
-  -Fitur-fiturnya kurang banyak
+<ul> -Diperlukannya hostingan agar bisa diakses banyak orang dengan lancar </ul>
+<ul> -Tampilan nya yang kurang menarik </ul>
+<ul> -Fitur-fiturnya kurang banyak </ul>
   
 Jika dibandingkan dengan jejaring sosial Facebook, Elgg memiliki beberapa keunggulan dan kelemahan. Berikut adalah beberapa perbandingan antara kedua jejaring sosial ini :
   -**Facebook**  menyediakan tampilan yang lebih menarik, bisa menampung banyak pengguna yang akan mengaksesnya, tersedia fitur-fitur yang jumlahnya lebih banyak dan menarik, tidak perlu di hosting saat ingin berbagi kepada yang lain. 
