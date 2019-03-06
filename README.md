@@ -13,7 +13,7 @@
 
 <p> Meskipun tidak sepowerfull facebook namun elgg memiliki banyak fitur yang mumpuni untuk kita coba diantaranya : melakukan update status, tambah pertemanan, membuat group, upload file/foto, ganti foto profil, social  networking, weblog, bookmark, instant messaging, file repository, access control, tagging, customization, dan community building. </p>
 
-#Instalasi
+# Instalasi
 
 [`^ Back To Home ^`](#)
 
